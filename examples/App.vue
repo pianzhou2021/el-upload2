@@ -40,7 +40,7 @@ export default {
   methods: {
     handleClick() {
       console.log('filelist>>>>', this.fileList);
-      console.log('uploadfilelist1>>>>', this.$refs.upload2.uploadFiles);
+      console.log('uploadfiles>>>>', this.$refs.upload2.uploadFiles());
     },
     handleClean() {
       this.fileList = [];

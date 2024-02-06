@@ -59,11 +59,16 @@ export default {
       this.$refs.upload.fileList.splice(this.$refs.upload.fileList.indexOf(file), 1);
       this.onRemove(file, uploadFiles);
     },
+    uploadFiles() {
+      return this.$refs.upload.uploadFiles;
+    },
     extend() {
       const refMethod = Object.entries(this.$refs['upload'])
       for (const [key, value] of refMethod) {
         if (!(key.includes('$') || key.includes('_'))) {
-          this[key] = value
+          if (typeof value === 'function') {
+            this[key] = value
+          }
         }
       }
     },

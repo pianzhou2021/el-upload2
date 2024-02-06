@@ -1,6 +1,6 @@
 {
   "name": "el-upload2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "dist/el-upload2.umd.min.js",
   "author": {

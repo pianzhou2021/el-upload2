@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-import Upload2 from '../packages/upload2';
+import Upload2 from '../packages';
 
 import 'element-ui/lib/theme-chalk/index.css'
 
